@@ -63,7 +63,7 @@ def test_existence_hint(web_browser):
     page = AuthPage(web_browser, url_ELK_Web)
     check_value = page.existence_hint.get_text()
     print('\n', check_value)
-    assert check_value == 'Укажите почту или номер телефона, на которые необходимо отправить код подтверждения'
+    assert check_value == 'Укажите номер телефона или почту, на которые необходимо отправить код подтверждения'
 
 # EXP-005 "Наличие поля ввода номера телефона или почты" (Форма авторизации по коду)
 def test_existence_input_field(web_browser):
@@ -103,7 +103,7 @@ def test_authorisation_by_email(web_browser, email, password):
     value_name = page.last_name.get_text()
     print('\n', value_name)
     # Проверка что личный кабинет принадлежит пользователю
-    assert value_name == 'Федоров'
+    assert value_name == 'Бурунов'
 
 # EXP-009, EXP-010 "Авторизация по номеру телефона" (Функционал "Авторизация")
 @pytest.mark.parametrize('phone_number', [valid_phone_number, invalid_phone_number], ids=["positive_phone_number", "negative_phone_number"])
@@ -120,7 +120,7 @@ def test_authorisation_by_phone_number(web_browser, phone_number, password):
     value_name = page.last_name.get_text()
     print('\n', value_name)
     # Проверка что личный кабинет принадлежит пользователю
-    assert value_name == 'Федоров'
+    assert value_name == 'Бурунов'
 
 # EXP-011, EXP-012, "Авторизация по login" (Функционал "Авторизация")
 @pytest.mark.parametrize('login', [valid_login, invalid_login], ids=["positive_login", "negative_login"])
@@ -137,7 +137,7 @@ def test_authorisation_by_login(web_browser, login, password):
     value_name = page.last_name.get_text()
     print('\n', value_name)
     # Проверка что личный кабинет принадлежит пользователю
-    assert value_name == 'Федоров'
+    assert value_name == 'Бурунов'
 
 # EXP-013 "Доступность формы "Регистрация" (Форма "Регистрация")
 def test_existence_registration_form(web_browser):
