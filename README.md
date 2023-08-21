@@ -1,4 +1,4 @@
-# Final_project
+# Module 28
 Данные тесты проверяют объект тестирования https://b2c.passport.rt.ru/auth/realms/b2c/protocol/openid-connect/auth?client_id=account_b2c&redirect_uri=https://b2c.passport.rt.ru/account_b2c/login&response_type=code&scope=openid&state=fe5147cd-4b75-4b4b-bb2a-c4f3e0b3b139&theme&auth_type
 
 Настройка проекта:
