@@ -5,9 +5,9 @@
 
 1. Создаем виртуальное окружение командой:
     python -m venv venv
-2. Активируем виртуальное окружение командой для Windows другая команда:
+2. Активируем виртуальное окружение командой для Windows команда:
     \env\Scripts\activate.bat
-   (MacOS/Linux): source venv/bin/activate
+   команда для (MacOS/Linux): source venv/bin/activate
 4. Установка зависимостей:
     pip install -r requirements.txt
 5. Настроить в IDE(Pycharm) текущий интерпритатор, выбрав текущее виртуальное окружение
